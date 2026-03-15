@@ -48,7 +48,6 @@ namespace NeuralNetworkSystem {
 
             timeDelta = 0;
             isTraining = false;
-            isTesting = false;
             PausedTraining = false;
             StepTraining = false;
         }
@@ -72,11 +71,6 @@ namespace NeuralNetworkSystem {
         public bool StepTraining { get; private set; }
         public int TrainingProgress { get; private set; }
         public int TrainingAmount { get; private set; }
-
-        public bool isTesting { get; private set; }
-        public int TestingProgress { get; private set; }
-        public int TestingAccuracy { get; private set; }
-        public int TestingAmount { get; private set; }
 
         public double timeDelta { get; private set; }
         DateTime timeTemp;
@@ -205,11 +199,8 @@ namespace NeuralNetworkSystem {
             Step,
             DoStep,
 
-            TestStart,
-            TestProgress,
-            TestFinish,
+            FinishEarly,
 
-            ErrorTraining,
             ErrorTesting
         }
         void PrintMessage(ConsoleMessages type) {
@@ -223,14 +214,9 @@ namespace NeuralNetworkSystem {
             else if (type == ConsoleMessages.Step) Console.WriteLine((StepTraining ? "Enabled" : "Disabled") + " step training.");
             else if (type == ConsoleMessages.DoStep) Console.WriteLine("Did one training step.");
 
-            else if (type == ConsoleMessages.TestStart) { Console.WriteLine($"Started testing on {TestingAmount} test samples."); } else if (type == ConsoleMessages.TestProgress) {
-                if (ProgramManager.disableMessages) return;
-                Console.WriteLine($"Testing is {100 * (double)TestingProgress / TestingAmount:F2}% Complete [{TestingProgress}/{TestingAmount}]");
-            } else if (type == ConsoleMessages.TestFinish) {
-                Console.WriteLine($"Testing complete with {(double)TestingAccuracy / TestingAmount * 100}% accuracy. [{TestingAccuracy}/{TestingAmount}]");
+            else if (type == ConsoleMessages.FinishEarly) Console.WriteLine($"Training finished early. (Learning Rate reached 0)");
 
-            } else if (type == ConsoleMessages.ErrorTraining) Console.WriteLine($"Wait until the training is complete before starting the testing process.");
-            else if (type == ConsoleMessages.ErrorTesting) { Console.WriteLine($"Wait until the testing is complete before starting the training process."); }    
+            else if (type == ConsoleMessages.ErrorTesting) Console.WriteLine($"Wait until the testing is complete before starting the training process.");
         }
 
         int delay_ticks = 2500;
@@ -247,7 +233,6 @@ namespace NeuralNetworkSystem {
                 await Task.Delay(1);
             }
             timeTemp = DateTime.Now;
-
         }
 
         async Task WaitFor(int ms, CancellationToken token) {
@@ -258,7 +243,7 @@ namespace NeuralNetworkSystem {
 
         public async Task MNIST_RandomTraining() { await MNIST_RandomTraining(cycles); }
         public async Task MNIST_RandomTraining(int loops) {
-            if (isTesting) {
+            if (ProgramManager.Tester.isTesting) {
                 PrintMessage(ConsoleMessages.ErrorTesting);
                 return;
             }
@@ -280,59 +265,18 @@ namespace NeuralNetworkSystem {
                     bool breath = counter >= delay_ticks;
                     await Train(training_data.GetSmallBatch(i, batchSize), breath);
                     if (breath) counter = 0;
+
+                    if (LearningRate <= 0f) {
+                        PrintMessage(ConsoleMessages.FinishEarly);
+                        cycle = loops;
+                        break;
+                    }
                 }
             }
             isTraining = false;
             
             PrintMessage(ConsoleMessages.Finish);
             //DetailVisualization.Refresh();
-        }
-
-
-        public async Task MINST_Test() {
-            if (isTraining) {
-                PrintMessage(ConsoleMessages.ErrorTraining);
-                return;
-            }
-            MNISTDatabase database = new MNISTDatabase("./MNIST/t10k-images.idx3-ubyte", "./MNIST/t10k-labels.idx1-ubyte");
-
-            List<Data> wrongs = new List<Data>();
-            List<int> wrong_labels = new List<int>();
-
-            isTesting = true;
-            TestingAmount = database.Size;
-            TestingAccuracy = 0;
-            PrintMessage(ConsoleMessages.TestStart);
-            int counter = 0;
-            timeTemp = DateTime.Now;
-            for (TestingProgress = 0; TestingProgress < TestingAmount; TestingProgress++) {
-                Data TestingData = database.ReadBatch(1)[0];
-                Vector result = Network.Calculate(TestingData.data, new VirtualNetwork(Network));
-
-                int guess = result.MaxIndex();
-                if (guess == TestingData.label) {
-                    TestingAccuracy++;
-                } else {
-                    wrongs.Add(TestingData);
-                    wrong_labels.Add(guess);
-                }
-
-                if (counter >= delay_ticks) {
-                    PrintMessage(ConsoleMessages.TestProgress);
-                    //DetailVisualization.Refresh();
-                    timeDelta = (DateTime.Now - timeTemp).TotalSeconds;
-                    await Task.Delay(1);
-                    counter = 0;
-                }
-                timeTemp = DateTime.Now;
-                counter += 1;
-            }
-            isTesting = false;
-            database.CloseLoad();
-
-            PrintMessage(ConsoleMessages.TestFinish);
-            //DetailVisualization.Refresh();
-            //Visualization.instance.DrawImages(wrongs.ToArray(), wrong_labels.ToArray());
         }
     }
 }

@@ -1,6 +1,3 @@
-using System;
-using System.IO;
-
 using NeuralNetworkSystem;
 
 public class MNISTDatabase {
@@ -48,6 +45,11 @@ public class MNISTDatabase {
 
     public static Data[] LoadAllTrainingData() {
         MNISTDatabase database = new MNISTDatabase("./MNIST/train-images.idx3-ubyte", "./MNIST/train-labels.idx1-ubyte");
+        return database.ReadBatch(database.Size);
+    }
+
+    public static Data[] LoadAllTestingData() {
+        MNISTDatabase database = new MNISTDatabase("./MNIST/t10k-images.idx3-ubyte", "./MNIST/t10k-labels.idx1-ubyte");
         return database.ReadBatch(database.Size);
     }
 

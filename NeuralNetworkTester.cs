@@ -21,7 +21,6 @@ namespace NeuralNetworkSystem {
         public double timeDelta { get; private set; }
         DateTime timeTemp;
 
-        CancellationTokenSource canceltoken;
 
         public int TestingCalculations(Data TestingData, VirtualNetwork network) {
             Vector result = Network.Calculate(TestingData.data, network);
@@ -35,6 +34,9 @@ namespace NeuralNetworkSystem {
                     break;
                 case ParallelType.CPU:
                     TestingAccuracy += CPUParallelCalculateGradient(DataBatch, wrongs, wrong_labels);
+                    break;
+                case ParallelType.GPU:
+                    TestingAccuracy += GPUParallelCalculateGradient(DataBatch, wrongs, wrong_labels);
                     break;
             }
         }
@@ -88,6 +90,10 @@ namespace NeuralNetworkSystem {
             );
             return correct;
         }
+        public int GPUParallelCalculateGradient(DataBatch DataBatch, List<Data> wrongs, List<int> wrong_labels) {
+            return 0;
+        }
+
 
         class LocalThread {
             public VirtualNetwork network;

@@ -105,6 +105,9 @@ namespace NeuralNetworkSystem {
                 case ParallelType.CPU: 
                     avg_loss = CPUParallelCalculateGradient(DataBatch, scale);
                     break;
+                case ParallelType.GPU: 
+                    avg_loss = GPUParallelCalculateGradient(DataBatch, scale);
+                    break;
             }
             avg_loss /= DataBatch.Size;
 
@@ -164,6 +167,9 @@ namespace NeuralNetworkSystem {
 
             );
             return total_loss;
+        }
+        public float GPUParallelCalculateGradient(DataBatch DataBatch, float scale) {
+            return 0f;
         }
 
 

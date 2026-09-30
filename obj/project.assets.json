@@ -1,7 +1,7 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
-    "net10.0": {
+    "net10.0-windows7.0": {
       "ILGPU/1.5.3": {
         "type": "package",
         "compile": {
@@ -15,6 +15,44 @@
           }
         }
       },
+      "ILGPU.Algorithms/1.5.3": {
+        "type": "package",
+        "dependencies": {
+          "ILGPU": "1.5.3"
+        },
+        "compile": {
+          "lib/net7.0/ILGPU.Algorithms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/ILGPU.Algorithms.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "OpenCL.Net/2.2.9": {
         "type": "package",
         "compile": {
@@ -25,6 +63,37 @@
         },
         "build": {
           "build/net40/OpenCL.Net.targets": {}
+        }
+      },
+      "System.Drawing.Common/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net10.0/System.Private.Windows.Core.dll": {
+            "related": ".xml"
+          },
+          "lib/net10.0/System.Private.Windows.GdiPlus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net10.0/System.Private.Windows.Core.dll": {
+            "related": ".xml"
+          },
+          "lib/net10.0/System.Private.Windows.GdiPlus.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       }
     }
@@ -54,6 +123,65 @@
         "lib/netstandard2.1/ILGPU.xml"
       ]
     },
+    "ILGPU.Algorithms/1.5.3": {
+      "sha512": "KySqYhghiJKkf77NTLcxebFzD2hz/hpO1Dxz/B0IpnowhwKD3i+PVaGa3E+TXahGHY6711HVOWpKr07wV6qEOg==",
+      "type": "package",
+      "path": "ilgpu.algorithms/1.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE-3RD-PARTY.txt",
+        "LICENSE.txt",
+        "ilgpu.algorithms.1.5.3.nupkg.sha512",
+        "ilgpu.algorithms.nuspec",
+        "lib/net471/ILGPU.Algorithms.dll",
+        "lib/net471/ILGPU.Algorithms.pdb",
+        "lib/net471/ILGPU.Algorithms.xml",
+        "lib/net5.0/ILGPU.Algorithms.dll",
+        "lib/net5.0/ILGPU.Algorithms.xml",
+        "lib/net6.0/ILGPU.Algorithms.dll",
+        "lib/net6.0/ILGPU.Algorithms.xml",
+        "lib/net7.0/ILGPU.Algorithms.dll",
+        "lib/net7.0/ILGPU.Algorithms.xml",
+        "lib/netstandard2.1/ILGPU.Algorithms.dll",
+        "lib/netstandard2.1/ILGPU.Algorithms.xml"
+      ]
+    },
+    "Microsoft.Win32.SystemEvents/10.0.5": {
+      "sha512": "a7rC0Qb5JGiA4f4ooqQjsx17LgYkb9feOcMNGyBXGqYmqC4ZoLbrV98zn7Kr5Z39BIU10Bti80Jwm/QAw+45VA==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/10.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Win32.SystemEvents.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Win32.SystemEvents.targets",
+        "lib/net10.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net10.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/net462/Microsoft.Win32.SystemEvents.dll",
+        "lib/net462/Microsoft.Win32.SystemEvents.xml",
+        "lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net8.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/net9.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net9.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "microsoft.win32.systemevents.10.0.5.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "runtimes/win/lib/net10.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net10.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net9.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net9.0/Microsoft.Win32.SystemEvents.xml",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "OpenCL.Net/2.2.9": {
       "sha512": "88xksmTwopVt7UN8Kdpry3sIKcEM5sbvIKJYYwj8MGOvnpqS50N9HaKBD/oXae/1pKyuj2/Ipo1eid7yQ18B1Q==",
       "type": "package",
@@ -66,45 +194,101 @@
         "opencl.net.2.2.9.nupkg.sha512",
         "opencl.net.nuspec"
       ]
+    },
+    "System.Drawing.Common/10.0.5": {
+      "sha512": "FYgPPbii/9Prh7RuY1gaxSyik7Ysw594K0uCHggDxHDgl7mfk8c4UlwluKjQoMquVGLce7Jld4DjjsnuYK3m7g==",
+      "type": "package",
+      "path": "system.drawing.common/10.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Drawing.Common.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net10.0/System.Drawing.Common.dll",
+        "lib/net10.0/System.Drawing.Common.pdb",
+        "lib/net10.0/System.Drawing.Common.xml",
+        "lib/net10.0/System.Private.Windows.Core.dll",
+        "lib/net10.0/System.Private.Windows.Core.xml",
+        "lib/net10.0/System.Private.Windows.GdiPlus.dll",
+        "lib/net10.0/System.Private.Windows.GdiPlus.xml",
+        "lib/net462/System.Drawing.Common.dll",
+        "lib/net462/System.Drawing.Common.pdb",
+        "lib/net462/System.Drawing.Common.xml",
+        "lib/net8.0/System.Drawing.Common.dll",
+        "lib/net8.0/System.Drawing.Common.pdb",
+        "lib/net8.0/System.Drawing.Common.xml",
+        "lib/net8.0/System.Private.Windows.Core.dll",
+        "lib/net8.0/System.Private.Windows.Core.xml",
+        "lib/net8.0/System.Private.Windows.GdiPlus.dll",
+        "lib/net8.0/System.Private.Windows.GdiPlus.xml",
+        "lib/net9.0/System.Drawing.Common.dll",
+        "lib/net9.0/System.Drawing.Common.pdb",
+        "lib/net9.0/System.Drawing.Common.xml",
+        "lib/net9.0/System.Private.Windows.Core.dll",
+        "lib/net9.0/System.Private.Windows.Core.xml",
+        "lib/net9.0/System.Private.Windows.GdiPlus.dll",
+        "lib/net9.0/System.Private.Windows.GdiPlus.xml",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.pdb",
+        "lib/netstandard2.0/System.Drawing.Common.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "system.drawing.common.10.0.5.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
-    "net10.0": [
+    "net10.0-windows7.0": [
       "ILGPU >= 1.5.3",
-      "OpenCL.Net >= 2.2.9"
+      "ILGPU.Algorithms >= 1.5.3",
+      "OpenCL.Net >= 2.2.9",
+      "System.Drawing.Common >= 10.0.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\U S E R\\.nuget\\packages\\": {},
+    "C:\\Users\\MA\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub Repositories\\Neurtal-Network-Overview\\Neurtal-Network-Overview.csproj",
+      "projectUniqueName": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Neurtal-Network-Overview.csproj",
       "projectName": "Neurtal-Network-Overview",
-      "projectPath": "D:\\GitHub Repositories\\Neurtal-Network-Overview\\Neurtal-Network-Overview.csproj",
-      "packagesPath": "C:\\Users\\U S E R\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub Repositories\\Neurtal-Network-Overview\\obj\\",
+      "projectPath": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Neurtal-Network-Overview.csproj",
+      "packagesPath": "C:\\Users\\MA\\.nuget\\packages\\",
+      "outputPath": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\U S E R\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net10.0"
+        "net10.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net10.0": {
-          "targetAlias": "net10.0",
+        "net10.0-windows7.0": {
+          "framework": "net10.0-windows7.0",
+          "targetAlias": "net10.0-windows7.0",
           "projectReferences": {}
         }
       },
@@ -122,19 +306,28 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
-      "net10.0": {
-        "targetAlias": "net10.0",
+      "net10.0-windows7.0": {
+        "framework": "net10.0-windows7.0",
+        "targetAlias": "net10.0-windows7.0",
         "dependencies": {
           "ILGPU": {
+            "target": "Package",
+            "version": "[1.5.3, )"
+          },
+          "ILGPU.Algorithms": {
             "target": "Package",
             "version": "[1.5.3, )"
           },
           "OpenCL.Net": {
             "target": "Package",
             "version": "[2.2.9, )"
+          },
+          "System.Drawing.Common": {
+            "target": "Package",
+            "version": "[10.0.5, )"
           }
         },
         "imports": [
@@ -153,7 +346,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

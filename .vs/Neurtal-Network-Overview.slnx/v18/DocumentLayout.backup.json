@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|d:\\mix\\github repositories\\neurtal-network-overview\\neuralnetwork functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|solutionrelative:neuralnetwork functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|d:\\mix\\github repositories\\neurtal-network-overview\\scripts\\mathstructs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|solutionrelative:scripts\\mathstructs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|d:\\mix\\github repositories\\neurtal-network-overview\\scripts\\networks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|solutionrelative:scripts\\networks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|d:\\mix\\github repositories\\neurtal-network-overview\\neuralnetworkstoring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|solutionrelative:neuralnetworkstoring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|d:\\mix\\github repositories\\neurtal-network-overview\\neuralnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|solutionrelative:neuralnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|d:\\mix\\github repositories\\neurtal-network-overview\\scripts\\layers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|solutionrelative:scripts\\layers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|d:\\mix\\github repositories\\neurtal-network-overview\\scripts\\datastructs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|solutionrelative:scripts\\datastructs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|d:\\mix\\github repositories\\neurtal-network-overview\\neuralnetworktrainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|solutionrelative:neuralnetworktrainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|d:\\mix\\github repositories\\neurtal-network-overview\\neuralnetworktester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|solutionrelative:neuralnetworktester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|d:\\mix\\github repositories\\neurtal-network-overview\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{599894A3-7857-7BE2-E24A-C0CCC90F360B}|Neurtal-Network-Overview.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MathStructs.cs",
+              "DocumentMoniker": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Scripts\\MathStructs.cs",
+              "RelativeDocumentMoniker": "Scripts\\MathStructs.cs",
+              "ToolTip": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Scripts\\MathStructs.cs",
+              "RelativeToolTip": "Scripts\\MathStructs.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAUwFYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T23:50:11.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataStructs.cs",
+              "DocumentMoniker": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Scripts\\DataStructs.cs",
+              "RelativeDocumentMoniker": "Scripts\\DataStructs.cs",
+              "ToolTip": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Scripts\\DataStructs.cs",
+              "RelativeToolTip": "Scripts\\DataStructs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T23:50:08.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Layers.cs",
+              "DocumentMoniker": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Scripts\\Layers.cs",
+              "RelativeDocumentMoniker": "Scripts\\Layers.cs",
+              "ToolTip": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Scripts\\Layers.cs",
+              "RelativeToolTip": "Scripts\\Layers.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwEYAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T00:03:46.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Networks.cs",
+              "DocumentMoniker": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Scripts\\Networks.cs",
+              "RelativeDocumentMoniker": "Scripts\\Networks.cs",
+              "ToolTip": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Scripts\\Networks.cs",
+              "RelativeToolTip": "Scripts\\Networks.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T00:15:30.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NeuralNetwork Functions.cs",
+              "DocumentMoniker": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\NeuralNetwork Functions.cs",
+              "RelativeDocumentMoniker": "NeuralNetwork Functions.cs",
+              "ToolTip": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\NeuralNetwork Functions.cs",
+              "RelativeToolTip": "NeuralNetwork Functions.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAgwPsBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T19:20:30.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NeuralNetworkTrainer.cs",
+              "DocumentMoniker": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\NeuralNetworkTrainer.cs",
+              "RelativeDocumentMoniker": "NeuralNetworkTrainer.cs",
+              "ToolTip": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\NeuralNetworkTrainer.cs",
+              "RelativeToolTip": "NeuralNetworkTrainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T19:20:31.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NeuralNetworkTester.cs",
+              "DocumentMoniker": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\NeuralNetworkTester.cs",
+              "RelativeDocumentMoniker": "NeuralNetworkTester.cs",
+              "ToolTip": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\NeuralNetworkTester.cs",
+              "RelativeToolTip": "NeuralNetworkTester.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T19:20:31.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NeuralNetwork.cs",
+              "DocumentMoniker": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\NeuralNetwork.cs",
+              "RelativeDocumentMoniker": "NeuralNetwork.cs",
+              "ToolTip": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\NeuralNetwork.cs",
+              "RelativeToolTip": "NeuralNetwork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T19:20:30.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NeuralNetworkStoring.cs",
+              "DocumentMoniker": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\NeuralNetworkStoring.cs",
+              "RelativeDocumentMoniker": "NeuralNetworkStoring.cs",
+              "ToolTip": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\NeuralNetworkStoring.cs",
+              "RelativeToolTip": "NeuralNetworkStoring.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T19:20:30.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T19:20:52.22Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,36 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub Repositories\\Neurtal-Network-Overview\\Neurtal-Network-Overview.csproj": {}
+    "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Neurtal-Network-Overview.csproj": {}
   },
   "projects": {
-    "D:\\GitHub Repositories\\Neurtal-Network-Overview\\Neurtal-Network-Overview.csproj": {
+    "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Neurtal-Network-Overview.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub Repositories\\Neurtal-Network-Overview\\Neurtal-Network-Overview.csproj",
+        "projectUniqueName": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Neurtal-Network-Overview.csproj",
         "projectName": "Neurtal-Network-Overview",
-        "projectPath": "D:\\GitHub Repositories\\Neurtal-Network-Overview\\Neurtal-Network-Overview.csproj",
-        "packagesPath": "C:\\Users\\U S E R\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub Repositories\\Neurtal-Network-Overview\\obj\\",
+        "projectPath": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\Neurtal-Network-Overview.csproj",
+        "packagesPath": "C:\\Users\\MA\\.nuget\\packages\\",
+        "outputPath": "D:\\mix\\Github Repositories\\Neurtal-Network-Overview\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\U S E R\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net10.0"
+          "net10.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net10.0": {
-            "targetAlias": "net10.0",
+          "net10.0-windows7.0": {
+            "framework": "net10.0-windows7.0",
+            "targetAlias": "net10.0-windows7.0",
             "projectReferences": {}
           }
         },
@@ -48,19 +49,28 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
-        "net10.0": {
-          "targetAlias": "net10.0",
+        "net10.0-windows7.0": {
+          "framework": "net10.0-windows7.0",
+          "targetAlias": "net10.0-windows7.0",
           "dependencies": {
             "ILGPU": {
+              "target": "Package",
+              "version": "[1.5.3, )"
+            },
+            "ILGPU.Algorithms": {
               "target": "Package",
               "version": "[1.5.3, )"
             },
             "OpenCL.Net": {
               "target": "Package",
               "version": "[2.2.9, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[10.0.5, )"
             }
           },
           "imports": [
@@ -79,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
